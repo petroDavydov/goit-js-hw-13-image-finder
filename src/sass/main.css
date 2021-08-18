@@ -1,0 +1,96 @@
+:root {
+  --box-shadow: 0px 0px 10px 7px #4169e1;
+  --background-color-button-search: seashell;
+  --accent-color: #4169e1;
+}
+
+body {
+  background-image: url("../images/desktop-8.png");
+  background-size: cover;
+  background-position: 50% -50px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+}
+
+.search-form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 200px;
+}
+
+.serch-form-input {
+  width: 500px;
+  height: 50px;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  background-color: var(--background-color-button-search);
+  border: none;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.serch-form-input:hover, .serch-form-input:focus {
+  border: 2px solid var(--accent-color);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.send-button {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  margin-left: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  background-color: var(--background-color-button-search);
+  border: none;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+.send-button:hover {
+  border: 2px solid var(--accent-color);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.load-more {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  background-color: var(--background-color-button-search);
+  border: none;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.load-more:hover {
+  border: 2px solid var(--accent-color);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+/*# sourceMappingURL=main.css.map */
