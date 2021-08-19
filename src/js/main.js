@@ -5,7 +5,7 @@ import "@pnotify/core/dist/PNotify.css";
 import cardMarkup from "../templates/card.hbs";
 import ImageApiService from "./apiService";
 import LoadMoreBtn from "./loadButton";
-// import * as basicLightbox from "basiclightbox";
+import * as basicLightbox from "basiclightbox";
 
 const refs = {
   searchForm: document.querySelector("#search-form"),
@@ -21,7 +21,7 @@ const imageApiService = new ImageApiService();
 
 refs.searchForm.addEventListener("submit", onSearch);
 loadMoreBtn.refs.button.addEventListener("click", onLoadMore);
-// refs.gallery.addEventListener("click", onGalleryElClick);
+refs.gallery.addEventListener("click", onMakeBigImage);
 
 function onSearch(e) {
   e.preventDefault();
@@ -95,9 +95,10 @@ function scrollPage() {
   }
 }
 
-// function onGalleryElClick(e) {
-//   const largeImageURL = e.target.dataset.source;
-//   const instance = basicLightbox.show(`<img src="${largeImageURL}">`);
+// function for bascLightBox
+function onMakeBigImage(e) {
+  const largeImagePath = e.target.dataset.source;
+  const instance = basicLightbox.create(`<img src="${largeImagePath}">`);
 
-//   instance.show();
-// }
+  instance.show();
+}
