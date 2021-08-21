@@ -219,3 +219,12 @@ img {
 .basicLightbox--visible .basicLightbox__placeholder {
   transform: scale(1);
 } */
+
+/* experiment */
+/* 
+.basicLightbox{
+	background:  rgb(134, 196, 18) !important;
+	z-index: 1000;
+	transition: 5s ease-in-out !important;
+
+} */
