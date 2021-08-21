@@ -155,7 +155,7 @@ img {
 /* ===== */
 
 /*  Styles for bascLightBox */
-.basicLightbox {
+/* .basicLightbox {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -218,4 +218,4 @@ img {
 
 .basicLightbox--visible .basicLightbox__placeholder {
   transform: scale(1);
-}
+} */
