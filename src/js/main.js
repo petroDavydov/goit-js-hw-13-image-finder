@@ -103,3 +103,10 @@ function onMakeBigImage(e) {
 
   instance.show();
 }
+
+// == ЗАПРЕТ ВВОДА РУСКИХ БУКВ
+let searchInput = document.querySelector(".search-form__input"); // поиск инпута в документе
+const regex = /[а-яА-ЯёЁ]/i; // регулярное виражение на запрет ввода русских букв
+searchInput.oninput = function () {
+  this.value = this.value.replace(regex, "");
+};
