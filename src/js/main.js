@@ -30,7 +30,7 @@ function onSearch(e) {
   clearGalleryContainer();
   imageApiService.query = e.currentTarget.elements.query.value;
 
-  if (imageApiService.query === "") {
+  if (imageApiService.query === "" || imageApiService.query === " ") {
     loadMoreBtn.disable();
     return noResults();
   }
