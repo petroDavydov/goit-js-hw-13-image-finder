@@ -6,7 +6,7 @@ import cardMarkup from "../templates/card.hbs";
 import ImageApiService from "./apiService";
 import LoadMoreBtn from "./loadButton";
 import * as basicLightbox from "basiclightbox";
-import "basiclightbox/dist/basicLightbox.min.css"
+import "basiclightbox/dist/basicLightbox.min.css";
 
 const refs = {
   searchForm: document.querySelector("#search-form"),
